@@ -1,38 +1,183 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.body {
+  /* background: #ded3d157; */
+  background: #fff;
+  padding: 30px;
+  overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.box-body {
+  margin: 30px auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h3 {
+  color: #a2a2a2;
+}
+
+h5 {
+  color: white;
+  text-shadow: #a2a2a2 1px 1px;
+}
+
+.imogis {
+  border: 2px solid #8c8c8c;
+  color: #c7c6c6;
+  padding: 20px;
+  max-width: 350px;
+  margin: 3px;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.imogis svg {
+  cursor: pointer;
+}
+
+.boxs-left,
+.boxs-right {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.boxs-left {
+  justify-content: unset;
+}
+
+.input-box {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.inputs {
+  border: 2px solid #8c8c8c;
+  border-bottom: none;
+  max-width: 350px;
+  overflow: hidden;
+  margin: 3px;
+  position: relative;
+}
+.send {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  border: none;
+  background-color: white;
+  font-size: 20px;
+  color: #cecece;
+}
+
+.box {
+  background-image: url(./bg-todo.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   color: white;
+  margin: 3px;
+  border: 2px solid #8c8c8c;
+  min-height: 82vh;
+  width: 350px;
+  display: flex;
+  flex-flow: column;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.box .itemBox {
+  background-color: #62626261;
+  border: 2px solid #d5d5d54a;
+  padding: 5px;
+  height: 40px;
+  width: 100%;
+  margin: 1px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #f0f0f0;
+}
+.itemBox h5 {
+  font-size: 18px;
+}
+.line {
+  text-decoration-line: line-through;
+  text-decoration-color: black;
+}
+.itemBox button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  color: #e8e8e8;
+  cursor: pointer;
+}
+.itemBox button:last-child {
+  color: #ff5b5b;
+}
+.itemBox button:first-child {
+  color: #555;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.box-water {
+  border: 2px solid #8c8c8c;
+  color: white;
+  padding: 20px;
+  max-width: 350px;
+  margin: 3px;
+  background-color: white;
+}
+
+input {
+  color: #626262f7;
+  width: 100%;
+  height: 6vh;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #8c8c8c;
+  font-size: 18px;
+  padding: 10px;
+}
+
+textarea {
+  margin: 3px;
+  max-width: 350px;
+  outline: none;
+  border: none;
+  border: 2px solid #8c8c8c;
+  font-size: 18px;
+  padding: 10px;
+  color: #626262f7;
+  height: 35vh;
+}
+
+.box-water div {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  font-size: 40px;
+  color: #c7c6c6;
+}
+
+.title-water {
+  font-size: 14px;
+  margin: 5px;
+  color: #73b8f1;
+}
+
+h5.task {
+  max-width: 145px;
+  overflow: hidden;
+  text-align: end;
+}
+h5.clock {
+  width: 102px;
+  overflow: hidden;
 }
